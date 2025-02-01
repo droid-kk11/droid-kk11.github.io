@@ -3,13 +3,40 @@
 <head>
   <title>Menu</title>
   <style>
-    
+    b
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: monospace;
+    }
+    #options {
+      border-color: SteelBlue;
+      border-width: 5px;
+      border-style: solid;
+    }
+    .option {
+      margin-top: 3px;
+      margin-bottom: 3px;
+      padding: 10px;
+    }
+    #selected {
+      background-color: SteelBlue;
+    }
+  #options:first-child {
+    margin-top: 0;
+  }
+  #options:last-child {
+    margin-bottom: 0;
+  }
+  h1, p {
+    text-align: center;
+  }
   </style>
 </head>
 <body>
   <h1>Select an option</h1>
   <div id="options">
-    <div class="option">2898 Scouter</div>
+    <div class="option" id="selected">2898 Scouter</div>
     <div class="option">2898 Scouter Installer</div>
     <div class="option">2898 Website</div>
     <div class="option">BPS Robotics Website</div>
